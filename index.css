@@ -286,6 +286,50 @@ section > article > div:nth-child(4) {
 }
 
 
+/* site_list.html */
+.site_list_box {
+    height: calc(600px - 50px);
+}
+.site_list_box table  {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.site_list_box table ul li {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.site_list_box table th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+
+
+
+.site_list_box table tr th:first-child {
+    width: 150px;
+    background-color: #AAAAAA;
+}
+
+.site_list_box table tr th:last-child {
+    width: 700px;
+    background-color: #AAAAAA;
+}
+
+.site_list_box table tr td:first-child {
+    text-align: center;
+    font-size: 20px;
+}
+
+.site_list_box  p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
 
 
 

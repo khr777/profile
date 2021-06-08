@@ -37,7 +37,7 @@ header .top_bar {
     padding: 0 20px;
 }
 
-header .top_bar .title {
+header .top_bar .header_title {
     font-size: 55px;
     /* margin-left: 30px; */
 }
@@ -96,7 +96,8 @@ nav div ul li a {
     }
 
 /* index.html */
-section > article {
+/* section > article { */
+section {
     width: 100%;
     height: 600px;
     /* position: relative; */
@@ -198,6 +199,55 @@ section > article > div:nth-child(4) {
     right: 300px;
 }
 */
+
+/* skill.html */
+
+.skill_ide_box div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_ide_box article > div {
+    border: 3px solid #000;
+    width: 100px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.skill_ide_box article ul {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.skill_ide_box article ul li {
+    list-style: square;
+    margin-bottom: 10px;
+}
+
+.skill_ide_box .skill_box div {
+    color: #fff;
+    border-color: #fff;
+}
+.skill_ide_box .skill_box {
+    color: #fff;
+}
+
+.skill_ide_box div .ide_box {
+    width: 400px;
+    height: 600px;
+    background-color: #EBEBEB;
+}
+
+.skill_ide_box div .skill_box {
+    width: 550px;
+    height: 600px;
+    background-color: #23194B;
+}
+
+
+
 
 /* footer.html */
 

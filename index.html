@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,36 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
+
 <body>
     <div class="header_html"></div>
     <section class="con">
-       <article>
+        <article>
+            <!-- <div></div>
            <div></div>
            <div></div>
-           <div></div>
-           <div></div>
-       </article> 
+           <div></div> -->
+            <div class="img_box">
+                <div><img src="images/main2.jpg" alt=""></div>
+                <div>
+                    <img src="images/main1.jpg" alt="">
+                    <div class="main_text_box">
+                        <div>
+                            <p>It is kind of fun to do the impossible.</p>
+                            <p>  — Walt Disney</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
     <div class="footer_html"></div>
     <script>
-         $(function(){
+        $(function () {
             $(".header_html").load("header.html");
             $(".footer_html").load("footer.html");
-         });
+        });
     </script>
 </body>
+
 </html>

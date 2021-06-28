@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관심있는 💻</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header_html"></div>
+    <section class="con interested_box">
+        <p>관심분야</p>
+        <div class="container">
+            <div>
+                <article class="article_box">
+                    <div class="article_box_1">
+                        <div>
+                            <p>웹 사이트</p>
+                        </div>
+                        <div>
+                            <p>앱</p>
+                        </div>
+                    </div>
+                    <div class="article_box_2">
+                        <ul>
+                            <li>Front-End</li>
+                            <li>Back-End</li>
+                        </ul>
+                    </div>
+                </article>
+                <article></article>
+            </div>
+            <div class="img_box">
+                <div class="one">
+                    <img src="images/node_js.PNG" alt=""><img src="images/mysql.PNG" alt=""><img src="images/git1.PNG" alt="">
+                </div>
+                <div class="two">
+                    <img src="images/java.PNG" alt=""><span>플렛폼</span><img src="images/linux.PNG" alt="">
+                </div>
+                <div class="three">
+                    <img src="images/ts.PNG" alt=""><img src="images/react.PNG" alt="">
+                </div>
+                <div class="four">
+                    <img src="images/html.PNG" alt=""><img src="images/css.PNG" alt=""><img src="images/js.PNG" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer_html"></div>
+    <script>
+        $(function () {
+            $('.header_html').load('header.html');
+            $('.footer_html').load('footer.html');
+        });
+    </script>
+</body>
+
+</html>

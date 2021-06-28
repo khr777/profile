@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>POPUP TEST</h1>
+
+    
+
+    <script>
+
+        console.log("test" + getCookie("popup"));
+
+        function setCookie(key, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+
+
+        }
+
+
+        function getCookie(key) {
+            var result = null;
+            var cookie = document.cookie.split(';');
+            cookie.some(function (item) {
+                // 공백을 제거
+                item = item.replace(' ', '');
+
+                var dic = item.split('=');
+
+                if (key === dic[0]) {
+                    result = dic[1];
+                    return true;    // break;
+                }
+            });
+            return result;
+        }
+
+        // 팝업을 실행해주는 페이지 (parent)
+        var popup = getCookie("popup");
+        if (popup != "N") {
+            $('h1').css('color', 'red');
+        }
+
+        // 팝업 페이지
+        
+        $('h1').click(function(){
+            $('h1').css('color', 'black');
+            setCookie("popup", "N", 5*1000);
+        });
+                
+
+
+
+
+    </script>
+
+    <!--
+<script>
+    function getCookie(name) {
+        var Found = false
+        var start, end
+        var i = 0
+
+        while (i <= document.cookie.length) {
+            start = i
+            end = start + name.length
+
+            if (document.cookie.substring(start, end) == name) {
+                Found = true
+                break
+            }
+            i++
+        }
+
+        if (Found == true) {
+            start = end + 1
+            end = document.cookie.indexOf(";", start)
+            if (end < start)
+                end = document.cookie.length
+            return document.cookie.substring(start, end)
+        }
+        return ""
+    }
+
+    $('h1').click(function () {
+        $('h1').css('color', 'black');
+        open = false;
+        console.log(open);
+
+        setCookie("popup", "N");
+
+    });
+
+    var popupCookie = getCookie("popup");  // 쿠기 가져오기
+    if (popupCookie != "N") {
+        // 팝업창 띄우기
+        $('h1').css('color', 'red');
+    }
+
+    function setCookie(name, value) {
+        var todayDate = new Date();
+        //todayDate.setHours( 24 );
+        todayDate.setMinutes(1);
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+    }
+
+</script>
+-->
+</body>
+
+</html>

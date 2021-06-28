@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김혜련이라는 사람은?🤨</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header_html"></div>
+    <section class="con about_me">
+        <article class="good">
+            <h1>장점<span> (나의 좋은점을 모두 끌어모아❗)</span></h1>
+            <div class="one">
+                <span>열정</span>
+                <span>끈기</span>
+                <span>이해</span>
+                <span>활발</span>
+                <span>긍정</span>
+            </div>
+            <div class="two">
+                <span>성실</span>
+                <span>욕심</span>
+                <span>착함</span>
+                <span>배려</span>
+                <span>타협</span>
+            </div>
+            <div class="three">
+                <span>운전</span>
+                <span>집중력</span>
+                <span>솔직</span>
+                <span>화합</span>
+                <span>존중</span>
+            </div>
+            <div class="four">
+                <span>정의</span>
+                <span>경험</span>
+                <span>예의</span>
+            </div>
+        </article>
+        <article class="bad">
+            <h1>단점<span> (단점 없는 사람이 있을까요...?)</span></h1>
+            <div class="one">
+                <span>착함</span>
+                <span>욕심</span>
+                <span>정</span>
+            </div>
+            <div class="two">
+                <span>배려</span>
+                <span>끈기</span>
+                <span>열정</span>
+            </div>
+        </article>
+        
+    </section>
+
+
+    <div class="footer_html"></div>
+    <script>
+        /* 
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+        */
+        $(function(e){
+            $('.header_html').load('header.html');
+            $('.footer_html').load('footer.html');
+        });
+    </script>
+</body>
+
+</html>

@@ -28,6 +28,10 @@ a {
     display: flex;
 }
 
+section {
+    margin-top: 100px;
+}
+
 /* head.html */
 header .top_bar {
     max-width: 1400px;
@@ -99,7 +103,7 @@ nav div ul li a {
 /* section > article { */
 section {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     /* position: relative; */
 }
 
@@ -108,6 +112,57 @@ section > article .img_box {
     display: flex;
     height: 100%;
 }
+
+section.index_section article {
+    display: flex;
+    justify-content: space-between;
+}
+
+section article.pr .main_pr {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+
+section article.pr .main_pr p:nth-child(2) {
+    font-size: 40px;
+    color: #858282;
+}
+
+section article.pr2 {
+    margin-top: 100px;
+    padding: 30px;
+}
+
+section article.pr2 .my_img2 {
+    width: 70%;
+}
+
+section article.pr2 img {
+    width: 80%;
+    margin-top: 70px;
+}
+
+section article.pr2 .main_pr2 p { 
+    width: 100%;
+    font-size: 17px;
+}
+
+section article.pr2 .main_pr2 p:first-child {
+    color: #858282;
+}
+
+section article.pr2 .main_pr2 p strong {
+    font-size: 24px;
+}
+
+section article.pr2 .main_pr2 p.color {
+    color: #858282;
+    font-size: 30px;
+}
+
+
 
 section > article > div > div:first-child {
     width: 450px;
@@ -141,7 +196,7 @@ section > article > div > div:last-child img {
 section > article > div > div:last-child .main_text_box {
     width: 710px;
     height: 601px;
-    background-color: #F0E6E6;
+    background-color: #2E407D;
     position: absolute;
     top: 0;
     right: 0;
@@ -202,6 +257,8 @@ section > article > div:nth-child(4) {
 
 /* skill.html */
 
+
+
 .skill_ide_box div {
     display: flex;
     justify-content: space-around;
@@ -244,6 +301,15 @@ section > article > div:nth-child(4) {
     width: 550px;
     height: 600px;
     background-color: #23194B;
+}
+
+.skill_bottom span  {
+    color:rgb(200, 203, 212);
+    margin-left: 150px;
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 25px;
+    
 }
 
 /* process.html */
@@ -330,6 +396,123 @@ section > article > div:nth-child(4) {
     margin-top: 80px;
 }
 
+/* interested.html */
+
+.interested_box {
+    height: calc(600px - 35px);
+}
+.interested_box >  p {
+    font-size: 35px;
+    text-decoration-line:underline;
+    text-underline-position: under;
+}
+
+
+.interested_box article .article_box_1 {
+    display: flex;
+    text-align: center;
+}
+
+.interested_box article .article_box_1 div:nth-child(1){
+    width: 300px;
+    border: 1px solid #000;
+    margin-right: 30px;
+    padding: 60px 0;
+}
+
+.interested_box article .article_box_1 div:nth-child(2){
+    width: 80px;
+    /* padding: 30px 0; */
+    border: 1px solid #000;
+    line-height: 140px;
+}
+
+.interested_box article.article_box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.interested_box article.article_box .article_box_2 li  {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.interested_box .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interested_box .container .img_box {
+    border: 3px solid rgb(190, 190, 190);
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.interested_box .container .img_box div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.interested_box .container .img_box span {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.interested_box .container .img_box img {
+    width: 80px;
+}
+
+/* about_me.html */
+
+section.about_me h1 {
+    font-size: 30px;
+    border-bottom: 1px solid #bebdbd;
+}
+
+section.about_me h1 span {
+    color:rgb(200, 203, 212);
+
+}
+section.about_me article  {
+    width: 800px;
+    margin: 0 auto;
+}
+
+section.about_me article div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.about_me article div span {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(242, 150, 22);
+    color: #fff;
+}
+
+section.about_me .bad div span {
+    background-color: rgb(20, 51, 134);
+    
+}
+
+section.about_me .bad {
+    margin-top: 100px;
+}
+
+
 
 
 
@@ -339,6 +522,7 @@ section > article > div:nth-child(4) {
 
 footer {
     margin-top: 80px;
+    margin-bottom: 30px;
 }
 footer .footer_box  img {
     width: 40px;

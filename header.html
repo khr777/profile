@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="con">
+    <header class="con pc">
         <div class="top_bar">
             <div class="header_title"><a href="index.html"> ✔ 재미있음에 도전하다.</a></div>
             <p>by<span> 19910114 김혜련</span></p>
         </div>
     </header>
-    <nav class="con">
+    <nav class="con pc">
         <div class="navi_box">
             <ul>
                 <li><a href="./skill.html">기술 / 개발툴</a></li>
@@ -24,5 +25,38 @@
             </ul>
         </div>
     </nav>    
+    <header class="con m">
+        <div class="top_bar">
+            <div class="header_title">
+                <a href="index.html"> ✔ 재미있음에 도전하다.</a>
+                <div class="btn-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- <p>by<span> 19910114 김혜련</span></p> -->
+        </div>
+    </header>
+    <nav class="con m none">
+        <div class="navi_box">
+            <ul>
+                <li><a href="./skill.html">기술 / 개발툴</a></li>
+                <li><a href="./process.html">성장과정</a></li>
+                <li><a href="./about_me.html">장점/단점</a></li>
+                <li><a href="./interested.html">관심분야</a></li>
+                <li><a href="./site_list.html">제작 사이트</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $('.btn-toggle').click(function(){
+            if ( $('nav').hasClass('none')) {
+                $('nav').removeClass('none');
+            } else {
+                $('nav').addClass('none');
+            }
+        });
+    </script>    
 </body>
 </html>

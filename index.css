@@ -521,6 +521,16 @@ section.about_me .bad div span {
     
 }
 
+section.about_me .bad h2 {
+    text-align: center;
+
+}
+
+section.about_me .bad h2 span {
+    color: #ff0000;
+}
+
+
 section.about_me .bad {
     margin-top: 100px;
 }
@@ -847,6 +857,12 @@ footer .footer_box ul li a:hover {
     section.about_me .bad {
         margin: 100px 0;
     }
+
+    section.about_me .bad h2 {
+        font-size: 16px;
+    }
+
+    
 
     
 

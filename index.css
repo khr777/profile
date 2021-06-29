@@ -320,7 +320,7 @@ section > article > div:nth-child(4) {
 /* process.html */
 
 .process_box {
-    height: calc(600px - 35px);
+    /* height: calc(600px - 35px); */
 }
 
 .process_box p {
@@ -359,7 +359,7 @@ section > article > div:nth-child(4) {
 
 /* site_list.html */
 .site_list_box {
-    height: calc(600px - 50px);
+    /* height: calc(600px - 50px); */
 }
 .site_list_box table  {
     border-collapse: collapse;
@@ -376,6 +376,10 @@ section > article > div:nth-child(4) {
     color:rgb(20, 51, 134);
     font-weight: bold;
 }
+
+.site_list_box table ul li a.pull {
+    color:rgb(242, 150, 22);
+}
 .site_list_box table th, td {
     border: 1px solid #000;
     padding: 10px;
@@ -386,12 +390,12 @@ section > article > div:nth-child(4) {
 
 .site_list_box table tr th:first-child {
     width: 150px;
-    background-color: #AAAAAA;
+    background-color: #30d8d8;
 }
 
 .site_list_box table tr th:last-child {
     width: 700px;
-    background-color: #AAAAAA;
+    background-color: #30d8d8;
 }
 
 .site_list_box table tr td:first-child {
@@ -655,6 +659,7 @@ footer .footer_box ul li a:hover {
     header .top_bar .btn-toggle {
         width: 30px;
         height: 30px;
+        padding: 5px;
     }
 
     header .top_bar .btn-toggle div {
@@ -677,9 +682,10 @@ footer .footer_box ul li a:hover {
     nav {
         position: fixed;
         width: 100%;
-        left: 0;
-        top: 50px;
+        right: -100%;
+        top: 60px;
         z-index: 1;
+        transition: right 0.3s;
     }
 
 
@@ -688,6 +694,9 @@ footer .footer_box ul li a:hover {
         justify-content: center;
         background-color: #2E407D;
         height: 100vh;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     nav .navi_box ul {
@@ -695,9 +704,15 @@ footer .footer_box ul li a:hover {
         margin-top: 50px;
     }
 
+    nav div ul li {
+        margin-left: unset;
+        width: 200px;
+    }
+
     nav div ul li a {
         padding: 20px 30px;
         color: #fff;
+        font-size: 18px;
 
     }
 
@@ -708,6 +723,8 @@ footer .footer_box ul li a:hover {
     nav div ul li:hover a::after {
         width: 0;
     }
+
+    
 
 
     /* skill.html */

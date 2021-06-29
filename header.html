@@ -29,7 +29,7 @@
         <div class="top_bar">
             <div class="header_title">
                 <a href="index.html"> ✔ 재미있음에 도전하다.</a>
-                <div class="btn-toggle">
+                <div class="btn-toggle close">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -38,7 +38,7 @@
             <!-- <p>by<span> 19910114 김혜련</span></p> -->
         </div>
     </header>
-    <nav class="con m none">
+    <nav class="con m close">
         <div class="navi_box">
             <ul>
                 <li><a href="./skill.html">기술 / 개발툴</a></li>
@@ -50,11 +50,30 @@
         </div>
     </nav>
     <script>
+        /* 
         $('.btn-toggle').click(function(){
             if ( $('nav').hasClass('none')) {
                 $('nav').removeClass('none');
             } else {
                 $('nav').addClass('none');
+            }
+        });
+        */
+        $('.btn-toggle').click(function(){
+            if ( $('nav').hasClass('close')) {
+                $('nav').css('right', '0');
+                $('nav').removeClass('close');
+                $('nav').css('background-color', 'rgba(202, 202, 202, 0.8)');
+            } else {
+                $('nav').css('right', '-100%');
+                $('nav').addClass('close');
+                $('nav').css('background-color', 'none');
+            }
+        });
+
+        $('nav').click(function(e){
+            if( !$('nav').has(e.target).length ) {
+                $('nav').css('right', '-100%');
             }
         });
     </script>    

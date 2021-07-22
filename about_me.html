@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="none">
     <div class="header_html"></div>
     <section class="con about_me">
         <article class="good pc">
@@ -119,6 +119,10 @@
             $('.header_html').load('header.html');
             $('.footer_html').load('footer.html');
         });
+
+        window.onload = function() {
+            $('body').removeClass('none');
+        }
     </script>
 </body>
 

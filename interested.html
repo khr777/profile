@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="none">
     <div class="header_html"></div>
     <section class="con interested_box">
         <p>관심분야</p>
@@ -78,6 +78,10 @@
             $('.header_html').load('header.html');
             $('.footer_html').load('footer.html');
         });
+
+        window.onload = function() {
+            $('body').removeClass('none');
+        }
     </script>
 </body>
 

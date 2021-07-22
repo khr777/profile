@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="none">
     <div class="header_html"></div>
     <section class="con site_list_box">
         <table>
@@ -75,6 +75,10 @@
     <script>
         $('.header_html').load('header.html');
         $('.footer_html').load('footer.html');
+
+        window.onload = function() {
+            $('body').removeClass('none');
+        }
     </script>
 </body>
 
